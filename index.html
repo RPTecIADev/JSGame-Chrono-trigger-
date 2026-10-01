@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono Trigger JS</title>
+ 
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+
+<div class="game-container">
+    
+    <!-- CENA DA BATALHA -->
+     <div id="magus" class="character"><img src="./src/img/magus.gif" alt=""></div> <!-- Placeholder Magus -->
+    <div id="crono" class="character"><img src="./src/img/crono.gif" alt=""></div> <!-- Placeholder Crono -->
+    
+
+    <!-- INTERFACE -->
+    <div class="ui-panel">
+        <div class="menu-box stats-box">
+            <div>
+                CRONO HP: <span id="crono-hp-text">999</span>
+                <div class="bar-bg"><div id="crono-hp-bar" class="hp-bar"></div></div>
+            </div>
+            <div>
+                CRONO MP: <span id="crono-mp-text">99</span>
+                <div class="bar-bg"><div id="crono-mp-bar" class="mp-bar"></div></div>
+            </div>
+        </div>
+
+        <div class="menu-box actions-box">
+            <button id="btn-atk" onclick="playerAction('atacar')">Atacar</button>
+            <button id="btn-magia" onclick="playerAction('magia')">Magia</button>
+            <button id="btn-item" onclick="playerAction('item')">Item (Poção)</button>
+        </div>
+
+        <div class="menu-box log-box" id="battle-log">
+            A batalha contra Magus começou!
+        </div>
+    </div>
+</div>
+<script src="./src/js/script.js"></script>
+</body>
+</html>
